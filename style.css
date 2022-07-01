@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(21, 19, 22);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px;
+    border-bottom: 1px solid #CA3A20;
+    margin-bottom: 35px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 7px;
+}
+
+header a {
+    transition: 800ms;
+}
+
+header a:hover {
+    color: #CA3A20;
+}
+
+img {
+    height: 60px;
+}
+
+ul {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+
+.container {
+    text-align: center;
+    padding: 89px;
+}
+
+.container .name h1 {
+    font-size: 60px;
+    margin: 10px;
+}
+
+.container .name h5 {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 8px;
+}
+
+#arrow {
+    font-size: 30px;
+    cursor: pointer;
+    color: #CA3A20;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    width: 600px;
+    margin: 0 auto;
+    font-weight: 200;
+    padding: 7px;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    background-color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #E05419 50%, #CA3A20 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+.form p {
+    padding: 16px;
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .name h1 {
+        font-size: 25px;
+    }
+
+    .container .name h5 {
+        font-size: 10px;
+    }
+
+    #about p {
+        max-width: 100%;
+        text-align: justify;
+    }
+}
